@@ -1,0 +1,84 @@
+html, body {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+#time {
+        position: relative;
+        width:5%;
+        height: 3%;
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 127%;
+        letter-spacing: 0.2em;
+    }
+    table {
+        position:relative;
+        width:100%;
+        height: 50%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px dashed lightblue;
+        border-radius: 5px;
+    }
+    td {
+        text-align: center;
+        /*border-bottom: 1px solid red;*/
+    }
+    tr:nth-of-type(even) > td {border-bottom: 1px solid purple;}
+    tr:nth-of-type(odd) > td {border-bottom: 1px solid green;}
+
+
+    tr:last-of-type > td {border-bottom-width: 0px; }
+
+
+       
+    @-webkit-keyframes setGreenRow {
+        from {background-color: transparent;}
+        to {background-color: rgba(0, 255, 0, 0.2);}
+}
+    @keyframes setGreenRow {
+        from {background-color: transparent;}
+        to {background-color: rgba(0, 255, 0, 0.2);}
+}
+    @-webkit-keyframes setYellowRow {
+        from {background-color: transparent;}
+        to {background-color: rgba(255, 255, 0, 0.2);}
+    }
+    @keyframes setYellowRow {
+        from {background-color: transparent;}
+        to {background-color: rgba(255, 255, 0, 0.2);}
+    }
+    @-webkit-keyframes setRedRow {
+        from {background-color: transparent;}
+        to {background-color: rgba(255, 0, 0, 0.2);}
+    }
+    @keyframes setRedRow {
+        from {background-color: transparent;}
+        to {background-color: rgba(255, 0, 0, 0.2);}
+    }
+    .yellow {
+        animation-name: setYellowRow;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
+    .green {
+        animation-name: setGreenRow;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
+    .red {
+        animation-name: setRedRow;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
+    form {
+        position:relative;
+        width: 8%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
